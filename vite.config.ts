@@ -1,20 +1,19 @@
-import { svelte } from '@sveltejs/vite-plugin-svelte'
 import { defineConfig } from 'vite'
+import { svelte } from '@sveltejs/vite-plugin-svelte'
+import { resolve } from 'path'
 
 export default defineConfig({
   plugins: [svelte()],
   build: {
     lib: {
-      entry: 'src/main.ts',
+      entry: resolve(__dirname, 'src/main.ts'),
       formats: ['cjs'],
-      fileName: () => 'main.js',
+      fileName: () => 'main.js'
     },
+    outDir: 'dist',
+    emptyOutDir: true,
     rollupOptions: {
-      external: ['obsidian'],
-      output: {
-        assetFileNames: 'styles.css'
-      }
-    },
-    emptyOutDir: true
+      external: ['obsidian']
+    }
   }
 })

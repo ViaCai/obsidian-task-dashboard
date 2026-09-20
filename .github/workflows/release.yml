@@ -24,7 +24,8 @@ jobs:
       - name: Prepare release artifacts
         run: |
           mkdir release
-          cp main.js manifest.json styles.css release/
+          cp dist/main.js manifest.json dist/style.css release/
+          mv release/style.css release/styles.css
 
       - name: Create Release
         uses: softprops/action-gh-release@v2
