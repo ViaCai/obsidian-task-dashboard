@@ -1,5 +1,6 @@
 import { Plugin, View, WorkspaceLeaf } from "obsidian";
 import App from "./App.svelte";
+import { SettingsTab } from "./settings-tab";
 
 export const VIEW_TYPE_TASK_DASHBOARD = "task‑gantt‑dashboard‑view";
 
@@ -118,7 +119,8 @@ export default class TaskGanttDashboardPlugin extends Plugin {
       }
     });
 
-    this.addSettingTab(new (await import("./settings‑tab")).SettingsTab(this.app, this));
+    // 修复：静态导入，不再用await import动态加载
+    this.addSettingTab(new SettingsTab(this.app, this));
   }
 
   async activateView() {
