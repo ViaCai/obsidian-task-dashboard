@@ -1,10 +1,10 @@
 {
-	"id": "task-dashboard",
-	"name": "Task Dashboard",
-	"version": "0.0.1",
-	"minAppVersion": "1.6.0",
-	"description": "侧边栏综合面板：甘特图、四象限待办、打卡热力图、每日语录、状态栏计时器，桌面&移动端双端适配",
-	"author": "ViaCai",
-	"authorUrl": "https://github.com/ViaCai",
-	"isDesktopOnly": false
+  "id": "task‑gantt‑dashboard",
+  "name": "任务甘特仪表盘",
+  "version": "0.0.7",
+  "minAppVersion": "1.6.0",
+  "description": "侧边栏：甘特图、待办四象限、打卡热力图、每日语录，支持桌面与移动端",
+  "author": "User",
+  "authorUrl": "",
+  "isDesktopOnly": false
 }
