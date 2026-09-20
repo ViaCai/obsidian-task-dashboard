@@ -1,0 +1,14 @@
+{
+  "name": "obsidian-task-dashboard",
+  "version": "0.0.1",
+  "description": "Obsidian侧边栏综合任务面板，甘特图、四象限、打卡、语录、悬浮计时器",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/你的用户名/obsidian-task-dashboard.git"
+  },
+  "scripts": {
+    "dev": "vite build --watch",
+    "build": "vite build",
+    "lint": "eslint . --ext .ts,.svelte"
+  }
+}
