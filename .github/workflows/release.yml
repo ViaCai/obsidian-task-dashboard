@@ -1,4 +1,4 @@
-name: Build & Release Plugin
+name: Build Plugin
 on:
   push:
     tags:
@@ -21,16 +21,11 @@ jobs:
       - name: Build plugin
         run: npm run build
 
-      - name: Prepare release artifacts
-        run: |
-          mkdir release
-          cp dist/main.js manifest.json dist/style.css release/
-          mv release/style.css release/styles.css
-
-      - name: Create Release
-        uses: softprops/action-gh-release@v2
+      - name: Upload compiled plugin files
+        uses: actions/upload-artifact@v4
         with:
-          files: release/*
-          generate_release_notes: false
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          name: obsidian-plugin-build
+          path: |
+            dist/main.js
+            manifest.json
+            dist/style.css
