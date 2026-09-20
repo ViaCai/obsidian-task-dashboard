@@ -1,6 +1,6 @@
 {
   "name": "obsidian-task-dashboard",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Obsidian侧边栏综合任务面板插件",
   "type": "module",
   "scripts": {
@@ -9,11 +9,10 @@
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^4.0.0",
     "@types/node": "^22.0.0",
-    "@types/sortablejs": "^1.15.8",
     "obsidian": "^1.7.2",
     "svelte": "^5.0.0",
     "typescript": "^5.7.0",
-    "vite": "^6.0.0"
+    "vite": "^5.4.0"
   },
   "dependencies": {
     "date-fns": "^4.1.0",
