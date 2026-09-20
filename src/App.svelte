@@ -1,7 +1,8 @@
 <script lang="ts">
   import type { PluginSettings } from "./main";
 
-  export let settings: PluginSettings;
+export let settings: PluginSettings;
+
 
   let activeTab: "gantt" | "quadrant" | "checkin" | "quote" = "gantt";
 
